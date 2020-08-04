@@ -1,0 +1,33 @@
+package Task2;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        //TASK 2
+
+        //Exercise 1
+
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Please enter a number of your choice :");
+        int numeral = userInput.nextInt();
+
+        if ((numeral % 3)==0 && (numeral % 5)==0){
+            System.out.println("ConsultAdd JAVA Training");
+
+        }
+        else if((numeral % 3)==0) {
+            System.out.println("ConsultAdd");
+
+        }
+        else if((numeral % 5)==0){
+            System.out.println("JAVA Training");
+
+        }
+        
+        
+      }
+    }

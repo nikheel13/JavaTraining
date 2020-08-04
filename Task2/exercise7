@@ -1,0 +1,50 @@
+package Task2;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //Exercise 7
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a number: ");
+        float f = in.nextFloat();
+
+        if (f > 0)
+        {
+            if (f < 1)
+            {
+                System.out.println("Positive Small");
+            }
+            else if (f > 1000000)
+            {
+                System.out.println("Positive large");
+            }
+            else
+            {
+                System.out.println("Positive");
+            }
+        }
+        else if (f < 0)
+        {
+            if (Math.abs(f) < 1)
+            {
+                System.out.println("Negative small");
+            }
+            else if (Math.abs(f) > 1000000)
+            {
+                System.out.println("Negative large");
+            }
+            else
+            {
+                System.out.println("Negative");
+            }
+        }
+        else
+        {
+            System.out.println("Zero");
+        }
+
+    }
+}

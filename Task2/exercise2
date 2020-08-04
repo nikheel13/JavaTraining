@@ -1,0 +1,70 @@
+package Task2;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+//Exercise 2 Calculator
+
+        System.out.println("Please select a function from the following options :");
+        System.out.println("Press 1 for Addition");
+        System.out.println("Press 2 for Subtraction");
+        System.out.println("Press 3 for Multiplication");
+        System.out.println("Press 4 for Division");
+        System.out.println("Press 5 for Average");
+
+        Scanner option = new Scanner(System.in);
+        int opt = option.nextInt();
+
+        System.out.println("Please enter the first variable : ");
+        Scanner firstVariable = new Scanner(System.in);
+        int first = firstVariable.nextInt();
+        System.out.println("Please enter the second Variable :");
+        Scanner secondVariable = new Scanner(System.in);
+        int second = secondVariable.nextInt();
+
+
+        int sum  = first + second;
+        int sub = first - second;
+        int mult = first * second;
+        int div = first / second;
+
+
+
+        if (opt == 1){
+
+            System.out.println("Your sum is :" + sum);
+        }
+        else if(opt == 2){
+            System.out.println("Your result is :" + sub);
+        }
+        else if (opt == 3){
+            System.out.println("Your result is :" + mult);
+        } else if(opt == 4) {
+            System.out.println("Your result is :" + div);
+        }
+
+        else if (opt == 5){
+            System.out.println("Please enter a third variable : " );
+
+            Scanner thirdVariable = new Scanner(System.in);
+            int first1 = thirdVariable.nextInt();
+
+            System.out.println("Please enter the fourth variable :");
+            Scanner fourthVariable = new Scanner(System.in);
+            int second1 = fourthVariable.nextInt();
+            int agg = (first + second + first1 + second1)/4;
+
+            System.out.println("Your Average is :" + agg);
+
+
+
+        }
+        else if(sum < 0 && sub < 0 && mult < 0 && div < 0){
+            System.out.println("Opps! option X(1/2/3/4/5) is returning the negative number!");
+        }
+
+  }
+}

@@ -1,0 +1,47 @@
+package Task1;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        //Exercise 1
+        //Swap two numbers using the third variable as a result name and do the same
+        //task without using any third variable.
+
+        int x  = 12;
+        int y  = 6;
+
+        x = x+y;
+        y = x-y;
+        x = x-y;
+
+        System.out.println("After Swapping : " + " X = " + x + ", Y = " + y);
+
+
+        //Exercise 2
+        System.out.println("Please enter a value :");
+        Scanner val = new Scanner(System.in);
+        int  number= val.nextInt();
+        System.out.println("You entered : " + number);
+
+
+        // Exercise 3:
+
+        System.out.println("Please enter two numbers between 1 - 10 : ");
+        Scanner in = new Scanner(System.in);
+
+            int val1 = in.nextInt();
+        System.out.println("Please enter the second value : ");
+            int val2 = in.nextInt();
+            int z = 30;
+            int result = val1 + val2 + z;
+            System.out.println("Your result is : " + result);
+
+
+
+
+    }
+}

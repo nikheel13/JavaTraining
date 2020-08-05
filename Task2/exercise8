@@ -1,0 +1,24 @@
+package Task2;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        //Exercise 8
+        System.out.println("Please type a character : ");
+        Scanner in = new Scanner(System.in);
+        char word = in.nextLine().charAt(0);
+
+        if (word == 'R' || word == 'r' || word == 'A' || word == 'a' || word == 'N' || word == 'n' || word == 'D' ||
+            word == 'd' || word == 'O' || word == 'o' || word == 'M' || word == 'm'){
+            System.out.println("FOUND!");
+        } else{
+
+            System.out.println("Not Found!");
+        }
+
+    }
+}

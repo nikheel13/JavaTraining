@@ -1,0 +1,16 @@
+package taskFive;
+
+public class Main {
+ 
+ public static void main(String[] args) {
+	// Task 5
+        //Exercise 5
+
+        StringBuilder reversal = new StringBuilder("Be Happy and Motivated");
+        reversal.reverse();
+        System.out.println(reversal);
+
+   }
+}
+
+    

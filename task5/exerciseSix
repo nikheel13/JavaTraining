@@ -1,0 +1,36 @@
+package taskFive;
+
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.Scanner;
+
+public class Main {
+
+
+    static void alphabetConversion(StringBuilder str)
+    {
+        int ln = str.length();
+
+        // Conversion methods
+        for (int i=0; i<ln; i++)
+        {
+            Character c = str.charAt(i);
+            if (Character.isLowerCase(c))
+                str.replace(i, i+1, Character.toUpperCase(c)+"");
+            else
+                str.replace(i, i+1, Character.toLowerCase(c)+"");
+
+        }
+    }
+
+public static void main(String[] args) {
+	// Task 5
+        //Exercise 6
+
+        StringBuilder str = new StringBuilder ("NikhEEl aSodia");
+        alphabetConversion(str);
+        System.out.println(str);
+        
+        }
+ }       

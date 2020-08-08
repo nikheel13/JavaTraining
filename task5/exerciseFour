@@ -1,0 +1,38 @@
+package taskFive;
+
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.Scanner;
+
+public class Main {
+
+    static boolean uniqueLetter(String str)
+    {
+        // Converting all the letters to lower case
+        //This is because if you put "eE" it would return true
+        str = str.toLowerCase();
+        int len = str.length();
+
+        char arr[] = str.toCharArray();
+
+        Arrays.sort(arr);
+        for (int i = 0; i < len - 1; i++) {
+            if (arr[i] == arr[i + 1])
+                return false;
+        }
+        return true;
+    }
+
+public static void main(String[] args) {
+	// Task 5
+        //Exercise 4
+
+        String str1 = "NikheEl";
+        System.out.println(uniqueLetter(str1));
+
+        String str2 = "isogram";
+        System.out.println(uniqueLetter(str2));
+        }
+        
+  }

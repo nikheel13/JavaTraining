@@ -1,0 +1,48 @@
+package taskFive;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// Task 5
+
+        //Exercise 1
+
+        String string = "My Name is Nikheel and I like learning";
+        String word = "", small = "", large = "";
+        String[] words = new String[100];
+        int length = 0;
+
+
+        string = string + " ";
+
+        for(int i = 0; i < string.length(); i++){
+            //Spliting the string into words
+            if(string.charAt(i) != ' '){
+                word = word + string.charAt(i);
+            }
+            else{
+                //Add word to array words
+                words[length] = word;
+
+                length++;
+                word = "";
+            }
+        }
+        //Initialize small and large with first word in the string
+        small = large = words[0];
+
+        //Determining the smallest and largest word in the string
+        for(int z = 0; z < length; z++){
+
+            if(small.length() > words[z].length())
+                small = words[z];
+
+            if(large.length() < words[z].length())
+                large = words[z];
+        }
+        System.out.println("Smallest word: " + small);
+        System.out.println("Largest word: " + large);
+    }
+}

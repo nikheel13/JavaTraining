@@ -1,0 +1,24 @@
+package taskFive;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class Main {
+
+
+      public static void main(String[] args) {
+	     
+       
+       // Task 5
+       //Exercise 3
+
+        String st = "Consult Add";
+
+        // using the replaceAll  function to remove the spaces!
+        st = st.replaceAll("\\s", "");
+
+        System.out.println(st);
+        
+        
+      }
+}

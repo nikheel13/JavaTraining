@@ -1,0 +1,53 @@
+package taskFour;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        //Exercise 4
+        // Adding Matrices
+        {
+            int matrixA, matrixB, matrixC, matrixD;
+            Scanner in = new Scanner(System.in);
+
+            System.out.println("Input number of rows of matrix");
+            matrixA = in.nextInt();
+            System.out.println("Input number of columns of matrix");
+            matrixB = in.nextInt();
+
+            int array1[][] = new int[matrixA][matrixB];
+            int array2[][] = new int[matrixA][matrixB];
+            int sum[][] = new int[matrixA][matrixB];
+
+            System.out.println("Input elements of first matrix");
+
+            for (matrixC = 0; matrixC < matrixA; matrixC++)
+                for (matrixD = 0; matrixD < matrixB; matrixD++)
+                    array1[matrixC][matrixD] = in.nextInt();
+
+            System.out.println("Input the elements of second matrix");
+
+            for (matrixC = 0; matrixC < matrixA; matrixC++)
+                for (matrixD = 0; matrixD < matrixB; matrixD++)
+                    array2[matrixC][matrixD] = in.nextInt();
+
+            for (matrixC = 0; matrixC < matrixA; matrixC++)
+                for (matrixD = 0; matrixD < matrixB; matrixD++)
+                    sum[matrixC][matrixD] = array1[matrixC][matrixD] + array2[matrixC][matrixD];
+
+            System.out.println("Sum of the matrices:-");
+
+            for (matrixC = 0; matrixC < matrixA; matrixC++) {
+                for (matrixD = 0; matrixD < matrixB; matrixD++)
+                    System.out.print(sum[matrixC][matrixD] + "\t");
+
+                System.out.println();
+            }
+        }
+
+    }
+
+}

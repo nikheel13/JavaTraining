@@ -1,0 +1,82 @@
+package taskThree;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        //Exercise 3
+        //Number of days in each month :
+
+        while(true) {
+            Scanner input = new Scanner(System.in);
+
+            int numberOfDays = 0;
+            String month = "Unknown";
+
+            System.out.print("Enter a month number from 1 - 12: ");
+            int userInput = input.nextInt();
+
+            switch (userInput) {
+                case 1:
+                    month = "January";
+                    numberOfDays = 31;
+                    break;
+                case 2:
+                    month = "February";
+
+                        numberOfDays = 29;
+                    break;
+                case 3:
+                    month = "March";
+                    numberOfDays = 31;
+                    break;
+                case 4:
+                    month = "April";
+                    numberOfDays = 30;
+                    break;
+                case 5:
+                    month = "May";
+                    numberOfDays = 31;
+                    break;
+                case 6:
+                    month = "June";
+                    numberOfDays = 30;
+                    break;
+                case 7:
+                    month = "July";
+                    numberOfDays = 31;
+                    break;
+                case 8:
+                    month = "August";
+                    numberOfDays = 31;
+                    break;
+                case 9:
+                    month = "September";
+                    numberOfDays = 30;
+                    break;
+                case 10:
+                    month = "October";
+                    numberOfDays = 31;
+                    break;
+                case 11:
+                    month = "November";
+                    numberOfDays = 30;
+                    break;
+                case 12:
+                    month = "December";
+                    numberOfDays = 31;
+                default:
+
+                    if(userInput > 12) {
+                        System.out.println("Invalid Details!");
+                    }
+            }
+            System.out.print(month + " " + " has " + numberOfDays + " days\n");
+
+        }
+
+    }
+
+}

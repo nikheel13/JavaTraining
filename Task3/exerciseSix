@@ -1,0 +1,27 @@
+package taskThree;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        {
+            //Exercise 6
+            //Determining increase or decrease in user inputs
+            Scanner in = new Scanner(System.in);
+            System.out.print("Enter the first value : ");
+            int valOne = in.nextInt();
+            System.out.print("Enter the second value : ");
+            int valTwo = in.nextInt();
+            System.out.print("Enter the third value : ");
+            int valThree = in.nextInt();
+            if (valOne < valTwo && valTwo < valThree) {
+                System.out.println("INCREASING");
+            } else if (valOne > valTwo && valTwo > valThree) {
+                System.out.println("DECREASING");
+            } else {
+                System.out.println("Neither INCREASING or DECREASING");
+            }
+        }
+    }
+}

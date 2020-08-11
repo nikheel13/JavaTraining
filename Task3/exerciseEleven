@@ -1,0 +1,25 @@
+package taskThree;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        {
+            //Exercise 11
+            //Comparing decimal places of two float numbers
+            Scanner input = new Scanner(System.in);
+            System.out.print("Enter the first floating­point number: ");
+            float num1 = input.nextFloat();
+            System.out.print("Enter the second floating­point number: ");
+            float num2 = input.nextFloat();
+            input.close();
+
+            if (Math.abs(num1 - num2) <= 0.01) {
+                System.out.println("The numbers have same number of decimal points.");
+            } else {
+                System.out.println("The number of decimals are different.");
+            }
+        }
+    }
+}

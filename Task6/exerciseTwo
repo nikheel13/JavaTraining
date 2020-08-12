@@ -1,0 +1,67 @@
+package taskSix;
+
+public class Main {
+
+
+    // Exercise 2
+
+    public static void main(String[] args){
+
+        Employee n1 = new Employee ("Robert","2010", "210 Heather",    "$ 90,000");
+        Employee n2 = new Employee ("Sam",   "2007", "211 Borussia",   "$ 100,000");
+        Employee n3 = new Employee ("john",  "2015", "212 Johanesburg","$ 75,000");
+        Employee n4 = new Employee ("Derek", "2017", "111 Westchester","$ 65,000");
+
+
+
+
+        System.out.println( " Name           Year Of Joining      Address           Salary" );
+        System.out.println( "---------------------------------------------------------------" );
+        System.out.println( n1 );
+        System.out.println( n2 );
+        System.out.println( n3 );
+        System.out.println( n4 );
+    }
+
+}
+
+class Employee{
+
+    private final String name;
+    private final String year;
+    private final String address;
+    private final String salary;
+
+    public Employee(String name, String year, String address, String salary) {
+
+        this.name = name;
+        this.year = year;
+        this.address = address;
+        this.salary = salary;
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public String getAddress(){
+        return address;
+    }
+
+    public String getSalary(){
+        return salary;
+    }
+
+
+    @Override
+    public String toString(){
+        return name + "       " + year + "          "+ address+ "         " + salary ;
+    }
+}
+
+

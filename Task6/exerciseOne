@@ -1,0 +1,79 @@
+package taskSix;
+
+public class Main {
+
+
+    // Exercise 1
+
+    public static void main(String[] args){
+
+        ComplexNumber n1 = new ComplexNumber (2,4);
+        ComplexNumber n2 = new ComplexNumber (3,5);
+
+        ComplexNumber sum = n1.sum(n2);
+        ComplexNumber difference = n1.difference(n2);
+        ComplexNumber product = n1.product(n2);
+
+        System.out.println("FIrst Complex number: " + n1 );
+        System.out.println("Second Complex number: " + n2 );
+        System.out.println("Sum of the complex numbers: " + sum);
+        System.out.println("Difference of the complex numbers: " + difference);
+        System.out.println("Difference of the complex numbers: " + product);
+    }
+
+}
+
+class ComplexNumber{
+
+    private final double real;
+    private final double imaginary;
+
+    public ComplexNumber(double real, double imaginary) {
+
+        this.real = real;
+        this.imaginary = imaginary;
+
+    }
+
+    public ComplexNumber sum(ComplexNumber other){
+
+        double r =  this.real + other.real;
+        double i = this.imaginary + other.imaginary;
+        return  new ComplexNumber(r,i);
+
+    }
+
+    public ComplexNumber difference(ComplexNumber other){
+
+        double r =  this.real - other.real;
+        double i = this.imaginary - other.imaginary;
+        return  new ComplexNumber(r,i);
+
+    }
+
+    public ComplexNumber product(ComplexNumber other){
+
+        double r =  this.real * other.real;
+        double i = this.imaginary * other.imaginary;
+        return  new ComplexNumber(r,i);
+
+    }
+
+    public double getReal() {
+        return real;
+    }
+
+    public double getImaginary() {
+        return imaginary;
+    }
+
+    @Override
+    public String toString(){
+        return real + " + " + imaginary + "i";
+    }
+}
+
+
+
+
+

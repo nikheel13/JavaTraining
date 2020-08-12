@@ -1,0 +1,38 @@
+package taskSix;
+
+class Programming{
+    
+    //Exercise 6
+    //Passing String 
+
+    String lang;
+
+
+    public Programming(String n){
+
+        lang = n;
+    }
+
+    public Programming(){
+
+        lang = "Programming Languages!";
+    }
+}
+
+
+public class Main {
+
+    public static void main(String[] args){
+
+        //Passed a string
+        Programming n = new Programming("Java!");
+        
+        //No String passed (Default expected)
+        Programming f = new Programming();
+
+        System.out.println("I love " + n.lang);
+        System.out.println("I love " + f.lang);
+        
+    }
+
+}

@@ -1,0 +1,41 @@
+package taskSix;
+
+
+public class AddAmount
+{
+    //Exercise 5
+    //Saving Box App
+    
+    
+    //Data member Amount
+    int amount = 50;
+
+    //Constructor that does not add money
+    public AddAmount() {
+        amount = amount + 0;
+    }
+
+    //Constructor with money to add
+    public AddAmount(int money) {
+        amount = amount + money;
+    }
+
+    static int transactionHistory = 0;
+    {
+        transactionHistory += 1;
+    }
+    public static void main(String[] args) {
+
+        //Transaction with no money
+        AddAmount transactionOne = new AddAmount();
+
+        //Transaction with money
+        AddAmount transactionTwo = new AddAmount(150);
+
+        System.out.println("Balance after first transaction : " + transactionOne.amount);
+        System.out.println("Balance after second transaction : " + transactionTwo.amount);
+
+        //Transaction History
+        System.out.println("Transaction History : " + AddAmount.transactionHistory);
+    }
+}
